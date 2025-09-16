@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box-sizing</title>
+  <style>
+    *{magin:0; padding: 0;}
+    .container{
+      width: 710px;
+      margin:50px;
+      background-color: #ccc;
+      padding: 10px;
+      }
+      .box{
+        margin: 20px;
+        border: 10px dashed #f00;
+        padding: 10px;
+        width: 500px;
+        background-color: #fff;
+      }
+      .box1{box-sizing: content-box;}
+      .box2{box-sizing: border-box;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus enim suscipit voluptatem, dolor mollitia, veniam fugit culpa quo esse dolores harum itaque similique accusantium quisquam, velit nostrum delectus cupiditate cum?</div>
+    <div class="box box2">Rem dolore rerum natus sint a quisquam consectetur illo consequatur fugit iste veritatis voluptatibus impedit, adipisci voluptatum, dicta officia assumenda repudiandae earum quia dolores optio repellendus quas? Non, eligendi ducimus!</div>
+  </div>
+</body>
+</html>
