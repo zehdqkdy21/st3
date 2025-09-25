@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>미디어 쿼리</title>
+  <title>미디어쿼리</title>
   <style>
     *{margin: 0; padding: 0;}
  
@@ -23,15 +23,28 @@ background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 
       right:  top:;
       */
       position: fixed;
-      right: 50px; top:50px;
+      left: 50px; top:50px;
       background-color: #fff;
       border: 1px solid #000;
       border-radius: 0.5em;
       padding: 0.5em;
     }
     .media-txt::before{
-      content: "pc";
+      content: "wide pc";
     }
+/* 
+    @media (max-width:1199.98px){
+      .media-txt::before{
+      content: "desk";
+
+    }
+    @media (max-width:767.98px){
+      .media-txt::before{
+      content: "tablet";
+    }
+    @media (max-width:576.98px){
+    .media-txt::before{
+      content: "mobile";} */
 
     /* 1. 이미지과 브라우저 가운데 위치
   2. 이미지크기는 이미지 비율을 따르면서 너비를 지정 */
@@ -59,6 +72,8 @@ background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 
 
     /* 모서리 둥글게 */
     border-radius: 20px;
+  
+   box-shadow:0px 0px 30px 5px rgba(0,0,0,0.4)
   }
   .media-box .media-wrap{
     width: auto;
@@ -72,6 +87,26 @@ background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 
     object-fit: cover;
     object-position: center;
   }
+  @media (max-width:1199.98px){
+  .container{
+  background: rgba(222,40,201,0);
+  background: linear-gradient(157deg, rgba(199, 26, 144, 0.34) 0%, rgba(199, 26, 144, 1) 100%);}}
+
+    @media (max-width:767.98px){
+      .container{
+        background: #ef6;}
+        .media-box{
+          padding: 20px;
+          border-radius: 10px;}
+
+        .media-box .media-wrap{
+          border-radius: 10px;}
+        }
+
+        }
+      }
+
+    }
   </style>
 </head>
 <body>
